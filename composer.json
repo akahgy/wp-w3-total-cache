@@ -1,0 +1,10 @@
+{
+  "name": "Westwing-Home-and-Living/wp-w3-total-cache",
+  "type": "wordpress-plugin",
+  "homepage": "https://github.com/Westwing-Home-and-Living/wp-w3-total-cache",
+  "license": "GPLv3",
+  "description": "WordPress Plugin W3 Total Cache with Westwing extension",
+  "require": {
+    "composer/installers": "~1.0.0"
+  }
+}

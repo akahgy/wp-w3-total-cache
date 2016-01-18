@@ -1037,6 +1037,12 @@ class W3_PgCache {
         if ($compression) {
             $key .= '_' . $compression;
         }
+        
+        //adam@westwing - extend
+        include_once WP_CONTENT_DIR . '/w3tc-extension.php';
+        if (function_exists('w3tc_extension_get_page_key')) {
+            $key =  w3tc_extension_get_page_key($key);
+        }
 
         return $key;
     }

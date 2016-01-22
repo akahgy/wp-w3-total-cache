@@ -958,7 +958,7 @@ class W3_PgCache {
         $encryption = '', $compression = '', $content_type = '', $request_uri = '') {
 
         if ($request_uri)
-            $key = substr($request_uri, strtolower(substr($request_uri, 0, 8)) == 'https' ? 8: 7);
+            $key = substr($request_uri, strtolower(substr($request_uri, 0, 5)) == 'https' ? 8: 7);
         else
             $key = $this->_request_host . $this->_request_uri;
 
